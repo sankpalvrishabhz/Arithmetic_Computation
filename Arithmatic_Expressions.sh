@@ -9,4 +9,5 @@ Result2=$(($a*$b+$c))
 echo $Result2
 Result3=$(($c+$a/$b))
 echo $Result3
-
+Result4=$(($a%$b+$c))
+echo $Result4
