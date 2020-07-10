@@ -23,3 +23,5 @@ done
 echo Array: ${result[@]}
 echo "Sorted Array in Descending order:"
 echo ${result[@]} | tr " " "\n"| sort -nr 
+echo "Sorted Array in Ascending order:"
+echo ${result[@]} | tr " " "\n"| sort -n
