@@ -15,9 +15,11 @@ Computation[1]=$Result1
 Computation[2]=$Result2
 Computation[3]=$Result3
 Computation[4]=$Result4
-echo "Dictionary:" ${Computation[@]}
+echo Dictionary: ${Computation[@]}
 for i in {1..4}
 do
 	result[$i]=${Computation[$i]}
 done
-echo "Array:" ${result[@]}
+echo Array: ${result[@]}
+echo "Sorted Array in Descending order:"
+echo ${result[@]} | tr " " "\n"| sort -nr 
